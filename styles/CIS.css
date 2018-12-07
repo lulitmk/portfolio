@@ -1,0 +1,119 @@
+body {
+    /*margin: 0;*/
+    background-color: #bee9f7;
+}
+/*top navigation*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #e0e2e3;
+    color: black;
+    border-radius: 8px;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+
+ul.topnav ul.right {
+    float: right;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav ul.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+/*bottom footer*/
+div.bottom{
+    clear: both;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #333;
+    margin: auto;
+    height: auto;
+    border-radius: 8px;
+
+}
+div.bottom div.bottom-box{
+    float: left;
+    color: white;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+}
+div.bottom div.bottom-box a{
+    color: white;
+    text-decoration: none;
+}
+div.bottom div.bottom-box a:hover{
+    color: red;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+/**/
+.active {
+    background-color: #4CAF50;
+}
+.banner {
+    border: 1px solid #4CAF50;
+    border-radius: 25px 50px;
+    margin: 1% auto auto;
+    width: 40%;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    /*outline-width: 3px;*/
+}
+/*flexible boxes*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 80%;
+    height: 60vh;
+    background-color: lightgrey;
+    margin: 1% auto 1%;
+    border-radius: 20px;
+
+}
+
+.flex-item {
+    /*background-color: cornflowerblue;*/
+    width: 49%;
+    /*height: 100px;*/
+    text-align: justify;
+    margin: 1% auto auto;
+    padding: 10px;
+}
+div.flex-item img{
+    border-radius: 50%;
+    height: 200px;
+    width:200px;
+    margin-left: 20%;
+    margin-top: 20%;
+
+}
